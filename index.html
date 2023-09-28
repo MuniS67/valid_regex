@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form class="container" name="login">
+      <div class="titles">
+        <h1 class="title">Example form</h1>
+        <div class="title_inf">
+          <p>All: 15</p>
+          <p>Need: 12</p>
+          <p>Success: 8/12</p>
+          <p>Error: 4/12</p>
+        </div>
+      </div>
+      <div class="inps">
+        <div class="inp_block requared">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <span class="span">Need to fill</span>
+        </div>
+        <div class="inp_block requared">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" />
+          <span class="span">Need to fill</span>
+        </div>
+        <div class="inp_block simple">
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="surname" />
+          <span class="span">Not need to fill</span>
+        </div>
+        <div class="inp_block requared">
+          <label for="about">About you</label>
+          <input type="text" id="about" name="about" />
+          <span class="span">Need to fill</span>
+        </div>
+        <div class="inp_block requared">
+          <label for="email">Email adress</label>
+          <input type="email" id="email" name="email" />
+          <span class="span">Need to fill</span>
+        </div>
+        <div class="inp_block requared">
+          <label for="js">What is JavaScript?</label>
+          <input type="text" id="js" name="js" />
+          <span class="span">Need to fill</span>
+        </div>
+        <div class="inp_block">
+          <label for="number">Phone number</label>
+          <input type="number" id="number" name="number" />
+          <span class="span">Not need to fill</span>
+        </div>
+        <div class="inp_block requared">
+          <label for="html">What is HTML?</label>
+          <input type="text" id="html" name="html" />
+          <span class="span">Need to fill</span>
+        </div>
+        <div class="inp_block">
+          <label for="mammy">Your Mom’s name</label>
+          <input type="text" id="mammy" name="mammy" />
+          <span class="span">Not need to fill</span>
+        </div>
+        <div class="inp_block requared">
+          <label for="css">What is CSS?</label>
+          <input type="text" id="css" name="css" />
+          <span class="span">Need to fill</span>
+        </div>
+        <div class="inp_block">
+          <label for="pappy">Your Pap’s name</label>
+          <input type="text" id="pappy" name="pappy" />
+          <span class="span">Not need to fill</span>
+        </div>
+        <div class="inp_block">
+          <label for="car">Your favourite car</label>
+          <input type="text" id="car" name="car" />
+          <span class="span">Not need to fill</span>
+        </div>
+      </div>
+      <button>Save changes</button>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.title {
+  font-size: 55px;
+  font-weight: 700;
+  color: black;
+}
+
+.title_inf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.inps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 35px;
+  row-gap: 15px;
+}
+
+.inp_block {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2px;
+  flex-direction: column;
+  position: relative;
+}
+
+.span {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.inp_block input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.inp_block::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("./Outside\ Icon\ Container\ \(1\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 30px;
+  right: -25px;
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+button {
+  width: 277px;
+  height: 59px;
+  padding: 20px 12px;
+  border-radius: 4px;
+  border: 2px solid #4200ff;
+  background: #4200ff;
+  color: #fff;
+  margin: -30px 0 0;
+  box-shadow: 0 1px 10px blue;
+}
+button:hover {
+  opacity: 0.9;
+}
+button:active {
+  box-shadow: 0 3px 10px blue;
+}
+.requared {
+  color: blue;
+}
+.requared input {
+  border: 1px solid blue;
+  outline-color: blue;
+}
+
+.error {
+  color: red;
+}
+.error input {
+  border: 1px solid red;
+  outline-color: red;
+}
+.error::after {
+  opacity: 1;
+}
